@@ -36,7 +36,7 @@ from FallenMusic import BOT_NAME, SUDOERS, app
 from FallenMusic.Modules import ALL_MODULES
 
 
-@app.on_message(filters.command(["mstats") & SUDOERS)
+@app.on_message(filters.command(["mstats"]) & SUDOERS)
 async def sys_stats(_, message: Message):
     sysrep = await message.reply_text(
         f"ɢᴇᴛᴛɪɴɢ {BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs, ɪᴛ'ʟʟ ᴛᴀᴋᴇ ᴀ ᴡʜɪʟᴇ..."
