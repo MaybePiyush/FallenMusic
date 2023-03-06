@@ -32,7 +32,7 @@ from FallenMusic import BOT_NAME, StartTime, app
 from FallenMusic.Helpers import get_readable_time
 
 
-@app.on_message(filters.command("ping"))
+@app.on_message(filters.command("mping"))
 async def ping_fallen(_, message: Message):
     hmm = await message.reply_photo(
         photo=config.PING_IMG, caption=f"{BOT_NAME} ɪs ᴘɪɴɢɪɴɢ..."
@@ -60,7 +60,7 @@ async def ping_fallen(_, message: Message):
                     InlineKeyboardButton("❄ sᴜᴘᴘᴏʀᴛ ❄", url=config.SUPPORT_CHAT),
                     InlineKeyboardButton(
                         "✨ sᴏᴜʀᴄᴇ ✨",
-                        url="https://github.com/AnonymousX1025/FallenMusic",
+                        url="https://github.com/MaybePiyush/AkameRobot",
                     ),
                 ],
             ]
