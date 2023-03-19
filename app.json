@@ -58,10 +58,12 @@
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
       ],
-      "stack": "container"
+      "stack": "container",
+
       "formation": { 
            "worker": { 
                "quantity": 1, 
                "size": "professional"
-}
+           }
+           }
   }
